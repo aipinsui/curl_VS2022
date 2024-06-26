@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+E:/curl_VS2022/build/tests/server/Makefile.inc.cmake
+E:/curl_VS2022/tests/server/CMakeLists.txt
+E:/curl_VS2022/tests/server/Makefile.inc

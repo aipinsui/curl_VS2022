@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+E:/curl_VS2022/build/lib/Makefile.inc.cmake
+E:/curl_VS2022/build/lib/Makefile.soname.cmake
+E:/curl_VS2022/lib/CMakeLists.txt
+E:/curl_VS2022/lib/Makefile.inc
+E:/curl_VS2022/lib/Makefile.soname
+E:/curl_VS2022/lib/curl_config.h.cmake

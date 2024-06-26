@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F1597431-1F6E-3C2F-AF9A-0746E11AE994}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>curl</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\curl_VS2022\build\src\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">curl.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">curl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\curl_VS2022\build\src\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">curl.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">curl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\curl_VS2022\build\src\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">curl.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">curl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\curl_VS2022\build\src\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">curl.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">curl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\curl_VS2022\include;E:\curl_VS2022\lib;E:\curl_VS2022\build\lib;E:\curl_VS2022\build\include;E:\curl_VS2022\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/zlib_VS2022/package/win64/Debug/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_CURL;USE_MANUAL;CURL_STATICLIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;CURL_EMBED_MANIFEST;_DEBUG;_WINDOWS;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_CURL;USE_MANUAL;CURL_STATICLIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\curl_VS2022\include;E:\curl_VS2022\lib;E:\curl_VS2022\build\lib;E:\curl_VS2022\build\include;E:\curl_VS2022\src;E:\zlib_VS2022\package\win64\Debug\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\curl_VS2022\include;E:\curl_VS2022\lib;E:\curl_VS2022\build\lib;E:\curl_VS2022\build\include;E:\curl_VS2022\src;E:\zlib_VS2022\package\win64\Debug\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\Debug\libcurl-d.lib;ws2_32.lib;bcrypt.lib;E:\zlib_VS2022\package\win64\Debug\lib\zlibd.lib;wldap32.lib;advapi32.lib;crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/curl_VS2022/build/src/Debug/curl.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/curl_VS2022/build/src/Debug/curl.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\curl_VS2022\include;E:\curl_VS2022\lib;E:\curl_VS2022\build\lib;E:\curl_VS2022\build\include;E:\curl_VS2022\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/zlib_VS2022/package/win64/Debug/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_CURL;USE_MANUAL;CURL_STATICLIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;CURL_EMBED_MANIFEST;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_CURL;USE_MANUAL;CURL_STATICLIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\curl_VS2022\include;E:\curl_VS2022\lib;E:\curl_VS2022\build\lib;E:\curl_VS2022\build\include;E:\curl_VS2022\src;E:\zlib_VS2022\package\win64\Debug\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\curl_VS2022\include;E:\curl_VS2022\lib;E:\curl_VS2022\build\lib;E:\curl_VS2022\build\include;E:\curl_VS2022\src;E:\zlib_VS2022\package\win64\Debug\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\Release\libcurl.lib;ws2_32.lib;bcrypt.lib;E:\zlib_VS2022\package\win64\Release\lib\zlib.lib;wldap32.lib;advapi32.lib;crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/curl_VS2022/build/src/Release/curl.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/curl_VS2022/build/src/Release/curl.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\curl_VS2022\include;E:\curl_VS2022\lib;E:\curl_VS2022\build\lib;E:\curl_VS2022\build\include;E:\curl_VS2022\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/zlib_VS2022/package/win64/Debug/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_CURL;USE_MANUAL;CURL_STATICLIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;CURL_EMBED_MANIFEST;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_CURL;USE_MANUAL;CURL_STATICLIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\curl_VS2022\include;E:\curl_VS2022\lib;E:\curl_VS2022\build\lib;E:\curl_VS2022\build\include;E:\curl_VS2022\src;E:\zlib_VS2022\package\win64\Debug\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\curl_VS2022\include;E:\curl_VS2022\lib;E:\curl_VS2022\build\lib;E:\curl_VS2022\build\include;E:\curl_VS2022\src;E:\zlib_VS2022\package\win64\Debug\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\MinSizeRel\libcurl.lib;ws2_32.lib;bcrypt.lib;E:\zlib_VS2022\package\win64\Release\lib\zlib.lib;wldap32.lib;advapi32.lib;crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/curl_VS2022/build/src/MinSizeRel/curl.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/curl_VS2022/build/src/MinSizeRel/curl.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\curl_VS2022\include;E:\curl_VS2022\lib;E:\curl_VS2022\build\lib;E:\curl_VS2022\build\include;E:\curl_VS2022\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/zlib_VS2022/package/win64/Debug/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_CURL;USE_MANUAL;CURL_STATICLIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;CURL_EMBED_MANIFEST;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_CURL;USE_MANUAL;CURL_STATICLIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\curl_VS2022\include;E:\curl_VS2022\lib;E:\curl_VS2022\build\lib;E:\curl_VS2022\build\include;E:\curl_VS2022\src;E:\zlib_VS2022\package\win64\Debug\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\curl_VS2022\include;E:\curl_VS2022\lib;E:\curl_VS2022\build\lib;E:\curl_VS2022\build\include;E:\curl_VS2022\src;E:\zlib_VS2022\package\win64\Debug\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\RelWithDebInfo\libcurl.lib;ws2_32.lib;bcrypt.lib;E:\zlib_VS2022\package\win64\Release\lib\zlib.lib;wldap32.lib;advapi32.lib;crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/curl_VS2022/build/src/RelWithDebInfo/curl.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/curl_VS2022/build/src/RelWithDebInfo/curl.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\curl_VS2022\build\CMakeFiles\6c8336ea1a5b65b18a4504c36a67119b\tool_hugehelp.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating tool_hugehelp.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -E echo "#include \"tool_setup.h\"" &gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E echo "#ifndef HAVE_LIBZ" &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\Strawberry\perl\bin\perl.exe E:/curl_VS2022/src/mkhelp.pl &lt; E:/curl_VS2022/build/docs/cmdline-opts/curl.txt &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E echo "#else" &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\Strawberry\perl\bin\perl.exe E:/curl_VS2022/src/mkhelp.pl -c &lt; E:/curl_VS2022/build/docs/cmdline-opts/curl.txt &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E echo "#endif /* HAVE_LIBZ */" &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\curl_VS2022\build\docs\cmdline-opts\curl.1;E:\curl_VS2022\src\mkhelp.pl;E:\curl_VS2022\src\tool_hugehelp.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\curl_VS2022\build\src\tool_hugehelp.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating tool_hugehelp.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -E echo "#include \"tool_setup.h\"" &gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E echo "#ifndef HAVE_LIBZ" &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\Strawberry\perl\bin\perl.exe E:/curl_VS2022/src/mkhelp.pl &lt; E:/curl_VS2022/build/docs/cmdline-opts/curl.txt &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E echo "#else" &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\Strawberry\perl\bin\perl.exe E:/curl_VS2022/src/mkhelp.pl -c &lt; E:/curl_VS2022/build/docs/cmdline-opts/curl.txt &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E echo "#endif /* HAVE_LIBZ */" &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\curl_VS2022\build\docs\cmdline-opts\curl.1;E:\curl_VS2022\src\mkhelp.pl;E:\curl_VS2022\src\tool_hugehelp.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\curl_VS2022\build\src\tool_hugehelp.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating tool_hugehelp.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -E echo "#include \"tool_setup.h\"" &gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E echo "#ifndef HAVE_LIBZ" &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\Strawberry\perl\bin\perl.exe E:/curl_VS2022/src/mkhelp.pl &lt; E:/curl_VS2022/build/docs/cmdline-opts/curl.txt &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E echo "#else" &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\Strawberry\perl\bin\perl.exe E:/curl_VS2022/src/mkhelp.pl -c &lt; E:/curl_VS2022/build/docs/cmdline-opts/curl.txt &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E echo "#endif /* HAVE_LIBZ */" &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\curl_VS2022\build\docs\cmdline-opts\curl.1;E:\curl_VS2022\src\mkhelp.pl;E:\curl_VS2022\src\tool_hugehelp.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\curl_VS2022\build\src\tool_hugehelp.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating tool_hugehelp.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -E echo "#include \"tool_setup.h\"" &gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E echo "#ifndef HAVE_LIBZ" &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\Strawberry\perl\bin\perl.exe E:/curl_VS2022/src/mkhelp.pl &lt; E:/curl_VS2022/build/docs/cmdline-opts/curl.txt &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E echo "#else" &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\Strawberry\perl\bin\perl.exe E:/curl_VS2022/src/mkhelp.pl -c &lt; E:/curl_VS2022/build/docs/cmdline-opts/curl.txt &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E echo "#endif /* HAVE_LIBZ */" &gt;&gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\curl_VS2022\build\docs\cmdline-opts\curl.1;E:\curl_VS2022\src\mkhelp.pl;E:\curl_VS2022\src\tool_hugehelp.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\curl_VS2022\build\src\tool_hugehelp.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\curl_VS2022\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/curl_VS2022/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/curl_VS2022 -BE:/curl_VS2022/build --check-stamp-file E:/curl_VS2022/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\curl_VS2022\build\src\Makefile.inc.cmake;E:\curl_VS2022\src\Makefile.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\curl_VS2022\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/curl_VS2022/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/curl_VS2022 -BE:/curl_VS2022/build --check-stamp-file E:/curl_VS2022/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\curl_VS2022\build\src\Makefile.inc.cmake;E:\curl_VS2022\src\Makefile.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\curl_VS2022\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/curl_VS2022/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/curl_VS2022 -BE:/curl_VS2022/build --check-stamp-file E:/curl_VS2022/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\curl_VS2022\build\src\Makefile.inc.cmake;E:\curl_VS2022\src\Makefile.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\curl_VS2022\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/curl_VS2022/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/curl_VS2022 -BE:/curl_VS2022/build --check-stamp-file E:/curl_VS2022/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\curl_VS2022\build\src\Makefile.inc.cmake;E:\curl_VS2022\src\Makefile.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\curl_VS2022\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\curl_VS2022\src\slist_wc.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_binmode.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_bname.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_cb_dbg.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_cb_hdr.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_cb_prg.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_cb_rea.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_cb_see.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_cb_wrt.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_cfgable.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_dirhie.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_doswin.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_easysrc.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_filetime.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_findfile.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_formparse.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_getparam.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_getpass.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_help.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_helpers.c" />
+    <ClCompile Include="E:\curl_VS2022\build\src\tool_hugehelp.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_ipfs.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_libinfo.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_listhelp.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_main.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_msgs.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_operate.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_operhlp.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_paramhlp.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_parsecfg.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_progress.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_setopt.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_sleep.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_stderr.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_strdup.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_urlglob.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_util.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_vms.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_writeout.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_writeout_json.c" />
+    <ClCompile Include="E:\curl_VS2022\src\tool_xattr.c" />
+    <ClCompile Include="E:\curl_VS2022\src\var.c" />
+    <ResourceCompile Include="E:\curl_VS2022\src\curl.rc" />
+    <ClCompile Include="E:\curl_VS2022\lib\base64.c" />
+    <ClCompile Include="E:\curl_VS2022\lib\dynbuf.c" />
+    <ClInclude Include="E:\curl_VS2022\src\slist_wc.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_binmode.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_bname.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_cb_dbg.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_cb_hdr.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_cb_prg.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_cb_rea.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_cb_see.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_cb_wrt.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_cfgable.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_dirhie.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_doswin.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_easysrc.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_filetime.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_findfile.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_formparse.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_getparam.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_getpass.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_help.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_helpers.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_hugehelp.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_ipfs.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_libinfo.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_main.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_msgs.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_operate.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_operhlp.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_paramhlp.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_parsecfg.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_progress.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_sdecls.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_setopt.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_setup.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_sleep.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_stderr.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_strdup.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_urlglob.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_util.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_version.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_vms.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_writeout.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_writeout_json.h" />
+    <ClInclude Include="E:\curl_VS2022\src\tool_xattr.h" />
+    <ClInclude Include="E:\curl_VS2022\src\var.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\curl_VS2022\build\ZERO_CHECK.vcxproj">
+      <Project>{E25E4333-2307-35D9-9B03-343CEA20F023}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\docs\cmdline-opts\generate-curl.1.vcxproj">
+      <Project>{D5A0090E-2E31-3D3B-B484-B9FB19B58D5F}</Project>
+      <Name>generate-curl.1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\lib\libcurl_static.vcxproj">
+      <Project>{4829AC34-9B05-34F9-8C8E-BB65E0C51DD8}</Project>
+      <Name>libcurl_static</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\curl_VS2022\build\CMakeFiles\7e9553fdd76dc7f0cbedc16b7f72e5aa\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{254ED3C1-019A-3051-865A-0E78FE4447FC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\curl_VS2022\build\CMakeFiles\a66b39dc348d3ecb4fb9bc5dfd0f86ac\CURLINFO_ACTIVESOCKET.3.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\curl_VS2022\build\CMakeFiles\a66b39dc348d3ecb4fb9bc5dfd0f86ac\CURLOPT_KEEP_SENDING_ON_ERROR.3.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\curl_VS2022\build\CMakeFiles\a66b39dc348d3ecb4fb9bc5dfd0f86ac\CURLSHOPT_USERDATA.3.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\curl_VS2022\build\CMakeFiles\7e9553fdd76dc7f0cbedc16b7f72e5aa\curl-opts-man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\curl_VS2022\docs\libcurl\opts\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\curl_VS2022\build\docs\libcurl\opts\CMakeFiles\curl-opts-man" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{254ED3C1-019A-3051-865A-0E78FE4447FC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

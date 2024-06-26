@@ -1,0 +1,1149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ABDBF451-F491-32F7-944D-70C11AC539FA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>testdeps</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\curl_VS2022\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\curl_VS2022\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\curl_VS2022\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\curl_VS2022\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\curl_VS2022\tests\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/curl_VS2022/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/curl_VS2022 -BE:/curl_VS2022/build --check-stamp-file E:/curl_VS2022/build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\curl_VS2022\build\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/curl_VS2022/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/curl_VS2022 -BE:/curl_VS2022/build --check-stamp-file E:/curl_VS2022/build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\curl_VS2022\build\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/curl_VS2022/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/curl_VS2022 -BE:/curl_VS2022/build --check-stamp-file E:/curl_VS2022/build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\curl_VS2022\build\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/curl_VS2022/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/curl_VS2022 -BE:/curl_VS2022/build --check-stamp-file E:/curl_VS2022/build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\curl_VS2022\build\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\curl_VS2022\build\ZERO_CHECK.vcxproj">
+      <Project>{E25E4333-2307-35D9-9B03-343CEA20F023}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\chkhostname.vcxproj">
+      <Project>{C41E1CD0-33FB-3C0A-A021-AC1129D6F1D7}</Project>
+      <Name>chkhostname</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\server\disabled.vcxproj">
+      <Project>{5FAB31CF-0DF9-33A1-8230-E5554F60CF7C}</Project>
+      <Name>disabled</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\server\fake_ntlm.vcxproj">
+      <Project>{F99B55AB-BBD1-31C0-92E5-30848D16FFFE}</Project>
+      <Name>fake_ntlm</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\server\getpart.vcxproj">
+      <Project>{7EF8BD1B-3331-318E-A117-1DCD2BBACFAF}</Project>
+      <Name>getpart</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1156.vcxproj">
+      <Project>{0EA10141-B6AC-3B35-89EE-283D65E10387}</Project>
+      <Name>lib1156</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1301.vcxproj">
+      <Project>{81BE1320-6598-3C43-A8AF-1BC2B12173B2}</Project>
+      <Name>lib1301</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1500.vcxproj">
+      <Project>{072D67DE-36B0-3730-A36C-F3F4A1B8C734}</Project>
+      <Name>lib1500</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1501.vcxproj">
+      <Project>{378DB6B7-CFB4-3943-BE04-761D7970DAC2}</Project>
+      <Name>lib1501</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1502.vcxproj">
+      <Project>{D05BF5C1-0438-3EEB-9600-94DB9DC5DC75}</Project>
+      <Name>lib1502</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1503.vcxproj">
+      <Project>{364C9EE7-2BD0-385D-9E6A-A0A82B699C60}</Project>
+      <Name>lib1503</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1504.vcxproj">
+      <Project>{905EA9C3-5A14-3785-9ADF-3499B435AE94}</Project>
+      <Name>lib1504</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1505.vcxproj">
+      <Project>{D2A9BBC4-3FD4-35CA-AB75-8CC0D7AA7454}</Project>
+      <Name>lib1505</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1506.vcxproj">
+      <Project>{52B1CA9B-5E21-30A8-AE65-79BA89B27DC5}</Project>
+      <Name>lib1506</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1507.vcxproj">
+      <Project>{9FF054F8-2115-3112-90E7-91C21D4292C0}</Project>
+      <Name>lib1507</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1508.vcxproj">
+      <Project>{13AAD231-FB3D-37CD-B577-3EF1AD9C2E55}</Project>
+      <Name>lib1508</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1509.vcxproj">
+      <Project>{CD41FC74-477A-3C52-9C53-2D367C307B80}</Project>
+      <Name>lib1509</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1510.vcxproj">
+      <Project>{29638CE1-5B9F-3B37-BEE1-E8DED403AEB7}</Project>
+      <Name>lib1510</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1511.vcxproj">
+      <Project>{6D207591-4AC0-36F8-A951-173BC2036547}</Project>
+      <Name>lib1511</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1512.vcxproj">
+      <Project>{502D484C-B87A-3B36-9195-B9E9A11AC704}</Project>
+      <Name>lib1512</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1513.vcxproj">
+      <Project>{46914B44-37CC-3C57-9595-715416C7A07C}</Project>
+      <Name>lib1513</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1514.vcxproj">
+      <Project>{55AC9FEA-93DC-36EF-83EB-1C6C43E33265}</Project>
+      <Name>lib1514</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1515.vcxproj">
+      <Project>{8E54E18C-F5EB-3167-A712-10F5BE38D1E1}</Project>
+      <Name>lib1515</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1517.vcxproj">
+      <Project>{59135D00-202F-3F2C-AFDB-8E2CDB804EA2}</Project>
+      <Name>lib1517</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1518.vcxproj">
+      <Project>{76BB4F34-2047-3A11-88C1-AF03B05CCC7A}</Project>
+      <Name>lib1518</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1520.vcxproj">
+      <Project>{886C41C6-1956-3753-8C5A-7B9FC468C604}</Project>
+      <Name>lib1520</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1521.vcxproj">
+      <Project>{B9C51659-8150-39E3-9F9A-5CA052EE719A}</Project>
+      <Name>lib1521</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1522.vcxproj">
+      <Project>{C79333BB-E533-345B-8911-178E3AB0A14D}</Project>
+      <Name>lib1522</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1523.vcxproj">
+      <Project>{1C62FC6E-8F92-3A4A-A615-8370CCE0ECA1}</Project>
+      <Name>lib1523</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1525.vcxproj">
+      <Project>{E7595A78-0B9B-344A-B4F9-4EAB8D665224}</Project>
+      <Name>lib1525</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1526.vcxproj">
+      <Project>{8F7B7613-A8F6-3C83-AB50-BCA4E46712C9}</Project>
+      <Name>lib1526</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1527.vcxproj">
+      <Project>{6D2EEDFA-9530-38F2-9296-560753D56795}</Project>
+      <Name>lib1527</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1528.vcxproj">
+      <Project>{2980F389-E775-3A50-9AB0-1E642473C455}</Project>
+      <Name>lib1528</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1529.vcxproj">
+      <Project>{A36D6376-7153-3654-A93C-18BA2FE7311A}</Project>
+      <Name>lib1529</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1530.vcxproj">
+      <Project>{7D1C96C3-F1E3-3189-A141-B932B44886D5}</Project>
+      <Name>lib1530</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1531.vcxproj">
+      <Project>{D0F733A2-6449-3DE8-B8D0-8195B22681D9}</Project>
+      <Name>lib1531</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1532.vcxproj">
+      <Project>{E973C603-BB0E-38E4-9A83-27061196369B}</Project>
+      <Name>lib1532</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1533.vcxproj">
+      <Project>{13285E15-5CA4-355D-A009-90E8F7AB743B}</Project>
+      <Name>lib1533</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1534.vcxproj">
+      <Project>{6240E928-5370-3C01-8463-21F51E778E00}</Project>
+      <Name>lib1534</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1535.vcxproj">
+      <Project>{197DAB9B-8C81-3845-ACA1-F3CE45EC3747}</Project>
+      <Name>lib1535</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1536.vcxproj">
+      <Project>{39D3A25D-4CC7-38CF-A61A-98EB2D87E313}</Project>
+      <Name>lib1536</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1537.vcxproj">
+      <Project>{3DB9B430-17A0-3C3F-B044-07C34184C688}</Project>
+      <Name>lib1537</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1538.vcxproj">
+      <Project>{8625C30E-249D-3D5D-BEB5-ECA32EC134E7}</Project>
+      <Name>lib1538</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1539.vcxproj">
+      <Project>{EDDD7548-8901-3607-B1DB-910B3DB546AD}</Project>
+      <Name>lib1539</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1540.vcxproj">
+      <Project>{5AEE7F0D-7BF3-3B9C-934A-EBFE7EBEF109}</Project>
+      <Name>lib1540</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1541.vcxproj">
+      <Project>{994E4D38-AAB7-37AF-870C-EBBBEF4A2EEF}</Project>
+      <Name>lib1541</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1542.vcxproj">
+      <Project>{1989EDE2-FE38-3FF0-A041-1A5EB8D73304}</Project>
+      <Name>lib1542</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1543.vcxproj">
+      <Project>{CC029658-CA39-344E-81A9-A471C2E1E7AE}</Project>
+      <Name>lib1543</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1545.vcxproj">
+      <Project>{2B4C8735-C1C2-30D6-BF00-292A6171F69B}</Project>
+      <Name>lib1545</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1550.vcxproj">
+      <Project>{56B52227-22B0-33A6-BFAD-CF9E257F4561}</Project>
+      <Name>lib1550</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1551.vcxproj">
+      <Project>{44F1B903-394F-3FB9-8632-3E96293E47B7}</Project>
+      <Name>lib1551</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1552.vcxproj">
+      <Project>{63C3E92B-F682-3849-A5D6-11BF23FA6AB9}</Project>
+      <Name>lib1552</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1553.vcxproj">
+      <Project>{677F2FD8-9BBD-3F01-9FD5-B527281E5494}</Project>
+      <Name>lib1553</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1554.vcxproj">
+      <Project>{C6260D26-66BA-3462-B3F1-34DCBD94EFE3}</Project>
+      <Name>lib1554</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1555.vcxproj">
+      <Project>{60AA1932-1B95-3D31-9B19-729E579E80F7}</Project>
+      <Name>lib1555</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1556.vcxproj">
+      <Project>{036F46DC-C2C4-3DB7-8F4A-2CDD35636CEF}</Project>
+      <Name>lib1556</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1557.vcxproj">
+      <Project>{C92F5B94-2B44-3ADA-AA06-551FD690D2D8}</Project>
+      <Name>lib1557</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1558.vcxproj">
+      <Project>{198ED06B-AA54-3551-B9E5-01D9A53EFCD9}</Project>
+      <Name>lib1558</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1559.vcxproj">
+      <Project>{C92BCEB2-DE17-380B-916D-A40CB60FD805}</Project>
+      <Name>lib1559</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1560.vcxproj">
+      <Project>{2D7E1073-8D88-3B7D-BAF7-E66924B7971D}</Project>
+      <Name>lib1560</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1564.vcxproj">
+      <Project>{1D6F50BA-9A42-3005-B62F-ABDE9B955690}</Project>
+      <Name>lib1564</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1565.vcxproj">
+      <Project>{ED655C4C-45E6-37EA-B0EC-A28191AF7B51}</Project>
+      <Name>lib1565</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1567.vcxproj">
+      <Project>{43911DF2-598C-3975-8889-BD83FB814EB5}</Project>
+      <Name>lib1567</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1568.vcxproj">
+      <Project>{9BF224CC-22A0-38EF-8B4A-BC7CC38A1BF4}</Project>
+      <Name>lib1568</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1569.vcxproj">
+      <Project>{E1806AED-C227-39EB-B71F-003CA969497F}</Project>
+      <Name>lib1569</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1591.vcxproj">
+      <Project>{DF48DDC9-082A-3BC1-96D7-47B3BEAB3C5F}</Project>
+      <Name>lib1591</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1592.vcxproj">
+      <Project>{F570496D-6C12-350D-B636-D18E6E49DA8D}</Project>
+      <Name>lib1592</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1593.vcxproj">
+      <Project>{CDA2680F-8724-3B69-B066-CDDD16C6DCC6}</Project>
+      <Name>lib1593</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1594.vcxproj">
+      <Project>{A694EF1A-50FD-3541-9B1E-E8136B7597DC}</Project>
+      <Name>lib1594</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1596.vcxproj">
+      <Project>{6F746751-71D7-3F37-95D0-D1FFE3AB5657}</Project>
+      <Name>lib1596</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1597.vcxproj">
+      <Project>{2637C3E4-D5C7-3460-8F9A-26B7873BC8B9}</Project>
+      <Name>lib1597</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1598.vcxproj">
+      <Project>{F3DE1416-B00F-3DF1-A40E-0B50B9730B7F}</Project>
+      <Name>lib1598</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1662.vcxproj">
+      <Project>{104A70FC-8CF2-3736-A787-C2422DA53F64}</Project>
+      <Name>lib1662</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1900.vcxproj">
+      <Project>{EE73C429-C5FB-307D-ADBD-63B9B3183D47}</Project>
+      <Name>lib1900</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1901.vcxproj">
+      <Project>{012DE3DB-1B2C-3177-B923-4E1283296927}</Project>
+      <Name>lib1901</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1903.vcxproj">
+      <Project>{945EB2B5-788D-3765-A2BD-20B90C035CFC}</Project>
+      <Name>lib1903</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1905.vcxproj">
+      <Project>{24E5C3B3-EE63-3742-80D7-C15FD809DD08}</Project>
+      <Name>lib1905</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1906.vcxproj">
+      <Project>{041861EF-14A8-3BA3-8B56-AD68D8AD77B9}</Project>
+      <Name>lib1906</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1907.vcxproj">
+      <Project>{FA963FD0-C6AE-3537-AE6D-8434044FEAEF}</Project>
+      <Name>lib1907</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1908.vcxproj">
+      <Project>{42ABF6C1-8208-3307-A644-0513F871972B}</Project>
+      <Name>lib1908</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1910.vcxproj">
+      <Project>{9253E685-2C86-3623-934F-6C2F96FCA422}</Project>
+      <Name>lib1910</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1911.vcxproj">
+      <Project>{E86868CF-1D1A-3054-AB05-D4DDBD0D9E4A}</Project>
+      <Name>lib1911</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1912.vcxproj">
+      <Project>{50F6BD95-6CC3-3E1C-9162-C0EDEC151724}</Project>
+      <Name>lib1912</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1913.vcxproj">
+      <Project>{3D5FBBEB-8D59-3F7B-B76E-FCC6DF22ACF9}</Project>
+      <Name>lib1913</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1915.vcxproj">
+      <Project>{259EFB74-4E72-30A3-9AC5-38945D68067F}</Project>
+      <Name>lib1915</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1916.vcxproj">
+      <Project>{3CEC6377-1706-3CC0-8629-4E9B04047241}</Project>
+      <Name>lib1916</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1917.vcxproj">
+      <Project>{BB645862-A083-3AA9-8332-AAE67B957FDC}</Project>
+      <Name>lib1917</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1918.vcxproj">
+      <Project>{5027D447-2D19-3D3E-A4F7-0E4A73B389A0}</Project>
+      <Name>lib1918</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1919.vcxproj">
+      <Project>{618AF1FD-162F-34E5-9877-A287E7262C51}</Project>
+      <Name>lib1919</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1933.vcxproj">
+      <Project>{8C5A6B90-A19B-3DC5-BCB0-43CE95A805DC}</Project>
+      <Name>lib1933</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1934.vcxproj">
+      <Project>{FD0B250E-4302-390B-B3D2-3D35939E0D1F}</Project>
+      <Name>lib1934</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1935.vcxproj">
+      <Project>{8EB54AB0-6CF3-3F56-93FD-2E90923B2E94}</Project>
+      <Name>lib1935</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1936.vcxproj">
+      <Project>{9164566C-A09A-3B31-9AF1-CA287AD27098}</Project>
+      <Name>lib1936</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1937.vcxproj">
+      <Project>{6A28A5CB-B238-31BD-992D-43F0B66A0D08}</Project>
+      <Name>lib1937</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1938.vcxproj">
+      <Project>{E30967FE-52A9-32E4-A8E0-080296073938}</Project>
+      <Name>lib1938</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1939.vcxproj">
+      <Project>{F67B506D-AF59-3880-BF6A-8B1858B9211F}</Project>
+      <Name>lib1939</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1940.vcxproj">
+      <Project>{CBE14E28-55A8-3614-9529-4F43F46D5B8A}</Project>
+      <Name>lib1940</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1945.vcxproj">
+      <Project>{5463BFB5-1619-3205-90DA-32CEE015D4AA}</Project>
+      <Name>lib1945</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1946.vcxproj">
+      <Project>{47E5BCC3-B525-3965-BC3B-6E5ACABD77FB}</Project>
+      <Name>lib1946</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1947.vcxproj">
+      <Project>{6DE5100A-3B83-3F28-8127-78C4DA6961BD}</Project>
+      <Name>lib1947</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1948.vcxproj">
+      <Project>{B9E75E67-FA99-3EF3-A16B-B84016B4E6CD}</Project>
+      <Name>lib1948</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1955.vcxproj">
+      <Project>{A67717EF-190A-3A6A-8F67-C51B284A57DE}</Project>
+      <Name>lib1955</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1956.vcxproj">
+      <Project>{FDE0B12A-10A6-3DD1-8B2C-6065E6C3F297}</Project>
+      <Name>lib1956</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1957.vcxproj">
+      <Project>{39AB6BDA-8769-33BF-980D-547222FBC28F}</Project>
+      <Name>lib1957</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1958.vcxproj">
+      <Project>{89B37047-1EF8-34CF-9067-10DC61FC018F}</Project>
+      <Name>lib1958</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1959.vcxproj">
+      <Project>{23DF5F69-60D5-3311-AEA8-BB1547A64521}</Project>
+      <Name>lib1959</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1960.vcxproj">
+      <Project>{34D7C3F0-1292-3BE5-8815-C27279E66A3D}</Project>
+      <Name>lib1960</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1964.vcxproj">
+      <Project>{D53DCAD6-BB87-3985-B10E-7651FF1AF86A}</Project>
+      <Name>lib1964</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1970.vcxproj">
+      <Project>{BC14D6E4-511D-3304-B93C-3D7490800D87}</Project>
+      <Name>lib1970</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1971.vcxproj">
+      <Project>{CD0DDE8E-CBC1-3B7A-8B20-CDDF920606B3}</Project>
+      <Name>lib1971</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1972.vcxproj">
+      <Project>{8C92EFF2-E1A8-32DA-83A8-41375F81C8FD}</Project>
+      <Name>lib1972</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1973.vcxproj">
+      <Project>{45C3DEE8-7AE7-3EE5-81BE-483C26274B55}</Project>
+      <Name>lib1973</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1974.vcxproj">
+      <Project>{A59E0374-1233-3D1F-913A-F2698F8946D2}</Project>
+      <Name>lib1974</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib1975.vcxproj">
+      <Project>{9D21CF49-DED7-3885-86E1-42DCCE76787F}</Project>
+      <Name>lib1975</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib2301.vcxproj">
+      <Project>{910AAE32-91E8-313B-9B75-1774B6881D4B}</Project>
+      <Name>lib2301</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib2302.vcxproj">
+      <Project>{19D048AB-C0B7-378C-86D2-5EE3D7C16AB7}</Project>
+      <Name>lib2302</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib2304.vcxproj">
+      <Project>{C5EF4249-D008-3FD6-9C25-66CDC0A828AA}</Project>
+      <Name>lib2304</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib2305.vcxproj">
+      <Project>{5748CF8B-BDBC-3A2E-881A-034C3AD61B9C}</Project>
+      <Name>lib2305</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib2306.vcxproj">
+      <Project>{188F9177-357D-3862-AC1C-D341C8770D79}</Project>
+      <Name>lib2306</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib2308.vcxproj">
+      <Project>{B39C339B-4A5F-39D2-A0E7-3B62CDC2A7FE}</Project>
+      <Name>lib2308</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib2402.vcxproj">
+      <Project>{2D03DB0F-9F5B-3DDE-93D7-6DE617E377C8}</Project>
+      <Name>lib2402</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib2404.vcxproj">
+      <Project>{10C03A45-BC4E-3CBD-AF3B-600DE64BC9AE}</Project>
+      <Name>lib2404</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib2405.vcxproj">
+      <Project>{ED458F56-850C-3444-9DA1-3ED9A2CE4759}</Project>
+      <Name>lib2405</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib2502.vcxproj">
+      <Project>{CF324D3E-9E01-3516-9E23-514A7541C456}</Project>
+      <Name>lib2502</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib3010.vcxproj">
+      <Project>{4F2C1208-D7E5-3BB5-8824-5D99846E7A42}</Project>
+      <Name>lib3010</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib3025.vcxproj">
+      <Project>{5A3AA695-F136-39F0-AD7D-7BD24E15B577}</Project>
+      <Name>lib3025</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib3026.vcxproj">
+      <Project>{4633CECC-2737-3383-867A-C8615B7F5920}</Project>
+      <Name>lib3026</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib3027.vcxproj">
+      <Project>{5F88948C-E439-3916-A79B-DA09A3AA8112}</Project>
+      <Name>lib3027</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib3100.vcxproj">
+      <Project>{9BB23DF8-1F4B-3771-8AEE-27F5AA9CD7E5}</Project>
+      <Name>lib3100</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib3101.vcxproj">
+      <Project>{1A9EE1C9-8AEB-379E-BB60-97927EC23BE9}</Project>
+      <Name>lib3101</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib3102.vcxproj">
+      <Project>{DE9A2C18-5111-35EB-BCB1-1A4062B2A2EC}</Project>
+      <Name>lib3102</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib3103.vcxproj">
+      <Project>{88380D31-3E6D-35B8-B0EA-CC1882ABFA08}</Project>
+      <Name>lib3103</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib500.vcxproj">
+      <Project>{808CBA70-2209-3357-BA07-90E1B4CBD1D4}</Project>
+      <Name>lib500</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib501.vcxproj">
+      <Project>{1F34F1B4-A132-3362-8D80-D654F781F7FD}</Project>
+      <Name>lib501</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib502.vcxproj">
+      <Project>{495D14EC-9C5A-3A7C-8FAF-90BE68499137}</Project>
+      <Name>lib502</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib503.vcxproj">
+      <Project>{625650CE-D12D-340D-B552-BD6D72B27868}</Project>
+      <Name>lib503</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib504.vcxproj">
+      <Project>{BD760F3E-F011-3B30-BFB4-6C4DE50C91AB}</Project>
+      <Name>lib504</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib505.vcxproj">
+      <Project>{2E34F127-00C3-3C12-8331-834C7659FDC0}</Project>
+      <Name>lib505</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib506.vcxproj">
+      <Project>{511A23C9-6352-3BF7-96E2-71E054048905}</Project>
+      <Name>lib506</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib507.vcxproj">
+      <Project>{57ADA5D0-52BC-3E2A-8433-A92F39D5387A}</Project>
+      <Name>lib507</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib508.vcxproj">
+      <Project>{B202F7AD-9C97-3C83-8180-218F4A138E98}</Project>
+      <Name>lib508</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib509.vcxproj">
+      <Project>{5D522BF2-74DE-3F9D-A52B-5064843C6C81}</Project>
+      <Name>lib509</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib510.vcxproj">
+      <Project>{E06D7793-F423-35B6-9C63-2F22A58D7207}</Project>
+      <Name>lib510</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib511.vcxproj">
+      <Project>{74FFEA99-9594-3A7E-AE3E-9B3B0B69DCDB}</Project>
+      <Name>lib511</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib512.vcxproj">
+      <Project>{9884A4B0-6077-3C62-A601-4C2B8CCC21BC}</Project>
+      <Name>lib512</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib513.vcxproj">
+      <Project>{E9FCE73B-BCD2-3299-86A7-49F973E53C6C}</Project>
+      <Name>lib513</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib514.vcxproj">
+      <Project>{D180D1FD-4C10-31F2-A46F-9B32359E6DAB}</Project>
+      <Name>lib514</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib515.vcxproj">
+      <Project>{07495825-9DD1-3B62-8421-712E55BC21E4}</Project>
+      <Name>lib515</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib516.vcxproj">
+      <Project>{FB6522B9-4ABF-3FFA-8918-0FAFC39B7D5E}</Project>
+      <Name>lib516</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib517.vcxproj">
+      <Project>{EAF98A77-11D0-32EC-853F-38CCC0383B8D}</Project>
+      <Name>lib517</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib518.vcxproj">
+      <Project>{359FC121-B418-3054-AB63-8EC634986336}</Project>
+      <Name>lib518</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib519.vcxproj">
+      <Project>{F872D7D9-0459-3409-BBDF-0EE4F9ED0C09}</Project>
+      <Name>lib519</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib520.vcxproj">
+      <Project>{0D0839DF-56A4-34DB-A08B-F6A03309C7A9}</Project>
+      <Name>lib520</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib521.vcxproj">
+      <Project>{654A6271-6418-3023-BFAD-712534B2200F}</Project>
+      <Name>lib521</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib523.vcxproj">
+      <Project>{1BFD9D36-CC14-30DE-BDCD-8D943AC28E36}</Project>
+      <Name>lib523</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib524.vcxproj">
+      <Project>{7F59B308-7FA7-3999-9FB1-A18D579ACEA7}</Project>
+      <Name>lib524</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib525.vcxproj">
+      <Project>{0C14B069-834D-3031-8E9C-4A690DFE865A}</Project>
+      <Name>lib525</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib526.vcxproj">
+      <Project>{2F87AF87-562E-3853-A71E-AB230F3FD727}</Project>
+      <Name>lib526</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib527.vcxproj">
+      <Project>{12D5F06C-03BC-3630-A8DD-60B7DDDE2036}</Project>
+      <Name>lib527</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib529.vcxproj">
+      <Project>{AAB92316-AF53-3693-B111-33105B050CE7}</Project>
+      <Name>lib529</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib530.vcxproj">
+      <Project>{71958160-16A6-3D6C-9EB6-73163739F407}</Project>
+      <Name>lib530</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib532.vcxproj">
+      <Project>{644C4F31-C78D-3B5F-AA4B-CD6A89FA029C}</Project>
+      <Name>lib532</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib533.vcxproj">
+      <Project>{7CBF0D0B-410C-3CCF-8990-79746D52F9F7}</Project>
+      <Name>lib533</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib536.vcxproj">
+      <Project>{FEE1F359-8A6E-32EC-B206-BBBFB839C229}</Project>
+      <Name>lib536</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib537.vcxproj">
+      <Project>{DDFA4AA2-3760-36AC-B1B2-3D67DB579EBC}</Project>
+      <Name>lib537</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib539.vcxproj">
+      <Project>{A66E2EAB-38E7-397B-AA53-F88A2C5C5A99}</Project>
+      <Name>lib539</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib540.vcxproj">
+      <Project>{82E75065-BFAE-361B-B766-9BA32603A40F}</Project>
+      <Name>lib540</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib541.vcxproj">
+      <Project>{B4B27EAE-B41A-30C8-BCD5-80DF814AE9D2}</Project>
+      <Name>lib541</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib542.vcxproj">
+      <Project>{797DCD6D-BBD8-33FA-849D-81035D6E4FE7}</Project>
+      <Name>lib542</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib543.vcxproj">
+      <Project>{47097BF9-38DF-3A93-9712-381553AF2108}</Project>
+      <Name>lib543</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib544.vcxproj">
+      <Project>{36066A1E-4274-3ADA-BC97-22266DDDA281}</Project>
+      <Name>lib544</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib545.vcxproj">
+      <Project>{A572B290-965E-31BE-B6F6-73C519A1CCA1}</Project>
+      <Name>lib545</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib547.vcxproj">
+      <Project>{95930D16-D670-38C0-A562-08E3909113DF}</Project>
+      <Name>lib547</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib548.vcxproj">
+      <Project>{1112210A-5BEE-3AB2-BBE8-8559C9FE27DE}</Project>
+      <Name>lib548</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib549.vcxproj">
+      <Project>{6914CA75-5C62-3952-AA3D-A0F9EF04DB53}</Project>
+      <Name>lib549</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib552.vcxproj">
+      <Project>{D5A1ED5C-DD35-3086-8068-262240EDFAE7}</Project>
+      <Name>lib552</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib553.vcxproj">
+      <Project>{760F2DF2-8624-3681-90E9-81F496F638B6}</Project>
+      <Name>lib553</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib554.vcxproj">
+      <Project>{7A91F4D5-B2A5-3110-A297-4325E6B890F6}</Project>
+      <Name>lib554</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib555.vcxproj">
+      <Project>{DFC36136-84BA-32DB-897F-788AF53FB453}</Project>
+      <Name>lib555</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib556.vcxproj">
+      <Project>{665ADA93-FCD6-3527-BDD7-F9733DE79CD0}</Project>
+      <Name>lib556</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib557.vcxproj">
+      <Project>{7C1C3465-7A5F-30AB-AAC1-9569EE015CC7}</Project>
+      <Name>lib557</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib558.vcxproj">
+      <Project>{5F1EBDDB-1EC6-3B4F-AF12-98BBD3D4E558}</Project>
+      <Name>lib558</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib559.vcxproj">
+      <Project>{0C729056-6035-3023-B143-4EFF7460D7E3}</Project>
+      <Name>lib559</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib560.vcxproj">
+      <Project>{74023476-1A75-372F-BFD0-48069082E13A}</Project>
+      <Name>lib560</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib562.vcxproj">
+      <Project>{8C3829DE-AE4D-3A41-A633-81487E3B59A6}</Project>
+      <Name>lib562</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib564.vcxproj">
+      <Project>{E8AAF42C-92FC-3553-AD14-B655023879FD}</Project>
+      <Name>lib564</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib565.vcxproj">
+      <Project>{6A30E452-E6EA-3AD0-8728-6EB1160005A2}</Project>
+      <Name>lib565</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib566.vcxproj">
+      <Project>{B9674EF1-15DD-33CA-BE49-DA8E6673DD1F}</Project>
+      <Name>lib566</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib567.vcxproj">
+      <Project>{8F8479CD-7167-338D-92F2-F00F0E3B205D}</Project>
+      <Name>lib567</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib568.vcxproj">
+      <Project>{3A347B8A-4435-3B56-948C-4F00B83C40EE}</Project>
+      <Name>lib568</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib569.vcxproj">
+      <Project>{D4A284DB-460D-3E07-B9AC-F66504786AD8}</Project>
+      <Name>lib569</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib570.vcxproj">
+      <Project>{6C6EA192-821F-3A43-86E6-EAF6080661A2}</Project>
+      <Name>lib570</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib571.vcxproj">
+      <Project>{2C0B4D35-F755-3E29-94F9-95E6A8E8F376}</Project>
+      <Name>lib571</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib572.vcxproj">
+      <Project>{BE94594B-F086-3DAD-B079-131721201B8F}</Project>
+      <Name>lib572</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib573.vcxproj">
+      <Project>{3A8D21A9-F3B7-313A-BEA9-99D5B2E4C11A}</Project>
+      <Name>lib573</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib574.vcxproj">
+      <Project>{021D3115-67ED-38AB-9B82-0F029FEAB04A}</Project>
+      <Name>lib574</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib575.vcxproj">
+      <Project>{DBB0F8CD-2A01-38D9-8E34-455C66E92E0E}</Project>
+      <Name>lib575</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib576.vcxproj">
+      <Project>{8854F84A-AED1-3705-91E9-A63F12003490}</Project>
+      <Name>lib576</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib578.vcxproj">
+      <Project>{0756735B-4C3D-3D41-AA3A-B7A2D7E7A475}</Project>
+      <Name>lib578</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib579.vcxproj">
+      <Project>{96065304-FF99-3DCC-A37F-748D56655AD3}</Project>
+      <Name>lib579</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib582.vcxproj">
+      <Project>{0B097B74-6B66-34F3-A363-DAA2776A67AF}</Project>
+      <Name>lib582</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib583.vcxproj">
+      <Project>{5E44167D-A950-37C1-859A-F8E89FA96430}</Project>
+      <Name>lib583</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib584.vcxproj">
+      <Project>{20385BD5-D156-3143-ADD6-E9BDDE1EAAF0}</Project>
+      <Name>lib584</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib585.vcxproj">
+      <Project>{67635ECD-995C-34EE-87CC-EF9B9461800D}</Project>
+      <Name>lib585</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib586.vcxproj">
+      <Project>{8EA78FED-D48E-3A36-A5FF-DE0F0161CD02}</Project>
+      <Name>lib586</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib587.vcxproj">
+      <Project>{99EE2253-8CBF-3EDF-9978-49268D7A8D94}</Project>
+      <Name>lib587</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib589.vcxproj">
+      <Project>{2DDE2525-0D12-3994-8831-F1A33C1EBAA4}</Project>
+      <Name>lib589</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib590.vcxproj">
+      <Project>{4DA282DF-19B7-3F75-A688-B9FCDE87B3C7}</Project>
+      <Name>lib590</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib591.vcxproj">
+      <Project>{ABBD6A2E-6ADD-3ED5-9956-FA9E256F98B7}</Project>
+      <Name>lib591</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib597.vcxproj">
+      <Project>{4F17466F-FF22-3341-8BC4-4440DA4F0C1F}</Project>
+      <Name>lib597</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib598.vcxproj">
+      <Project>{BC1D11C3-F89C-30BD-9A7F-E4C4E6BA0A4A}</Project>
+      <Name>lib598</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib599.vcxproj">
+      <Project>{756BEF15-DADF-3448-9716-D42EF22C1785}</Project>
+      <Name>lib599</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib643.vcxproj">
+      <Project>{0E27D761-B77D-3A2C-ACE3-6B8D56730397}</Project>
+      <Name>lib643</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib645.vcxproj">
+      <Project>{912E25D2-5782-3CF6-8975-9C6061D5C3E1}</Project>
+      <Name>lib645</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib650.vcxproj">
+      <Project>{0BE796E2-C861-327E-930E-12AB8F80B8D5}</Project>
+      <Name>lib650</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib651.vcxproj">
+      <Project>{C6E0C4CB-7C58-3AA3-B4CC-362579D4F421}</Project>
+      <Name>lib651</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib652.vcxproj">
+      <Project>{21DF9B07-C917-3EB4-80F3-CCD11D74CC56}</Project>
+      <Name>lib652</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib653.vcxproj">
+      <Project>{9EDFE446-0A20-3F3D-8F02-7FF24F2CB7DD}</Project>
+      <Name>lib653</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib654.vcxproj">
+      <Project>{FDABA3E2-A760-3263-AFF1-08C925F62B42}</Project>
+      <Name>lib654</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib655.vcxproj">
+      <Project>{5D97A550-DBB2-3471-8A5D-13652B9B6AC7}</Project>
+      <Name>lib655</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib658.vcxproj">
+      <Project>{B8170D11-9CD9-3621-BCE6-7E632F1FF7A5}</Project>
+      <Name>lib658</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib659.vcxproj">
+      <Project>{007C2102-B89E-3540-B809-85AC24DA2014}</Project>
+      <Name>lib659</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib661.vcxproj">
+      <Project>{3A62E1FE-6998-3175-BB51-00AEBF09963B}</Project>
+      <Name>lib661</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib666.vcxproj">
+      <Project>{8C402430-EDC7-3801-8E48-B34A70EC73D3}</Project>
+      <Name>lib666</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib667.vcxproj">
+      <Project>{AAFB1973-57C9-33C4-B2A7-C7BA91B0A844}</Project>
+      <Name>lib667</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib668.vcxproj">
+      <Project>{5B5BD515-A4CC-3DA5-9C87-892544430FFF}</Project>
+      <Name>lib668</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib670.vcxproj">
+      <Project>{F2A5DA28-A80D-30D0-A08E-636910BC5399}</Project>
+      <Name>lib670</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib671.vcxproj">
+      <Project>{5DF6B2BB-7362-3816-AAF8-6AFD0860778F}</Project>
+      <Name>lib671</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib672.vcxproj">
+      <Project>{E6EE4DD2-8164-31BC-A361-D9C7A980A893}</Project>
+      <Name>lib672</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib673.vcxproj">
+      <Project>{DA73E7DF-91F6-3AD3-81B9-0F056E0B4753}</Project>
+      <Name>lib673</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib674.vcxproj">
+      <Project>{572B8D4E-5C34-3B76-B515-D7FF50621830}</Project>
+      <Name>lib674</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib676.vcxproj">
+      <Project>{BC1583C1-21DA-3E43-AC14-30F57DA01479}</Project>
+      <Name>lib676</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib677.vcxproj">
+      <Project>{D526052C-DB95-3D9F-8B42-4A906CDC1EC3}</Project>
+      <Name>lib677</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\lib678.vcxproj">
+      <Project>{EC3429DE-5EAA-3B91-A41B-A8CCCA234B77}</Project>
+      <Name>lib678</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\libauthretry.vcxproj">
+      <Project>{532EEEBB-C63C-38CF-9CDC-09FF6CDC8461}</Project>
+      <Name>libauthretry</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\libntlmconnect.vcxproj">
+      <Project>{A5B79063-D31E-3431-8F59-3048A868C3F3}</Project>
+      <Name>libntlmconnect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\libtest\libprereq.vcxproj">
+      <Project>{6D29A792-5216-31CE-A371-21972DE3610B}</Project>
+      <Name>libprereq</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\server\mqttd.vcxproj">
+      <Project>{990D47B7-0FDA-398F-82A0-28FAF947C388}</Project>
+      <Name>mqttd</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\server\resolve.vcxproj">
+      <Project>{A9BCEA35-DAD8-3BF7-BA82-E4458FFA70F0}</Project>
+      <Name>resolve</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\server\rtspd.vcxproj">
+      <Project>{55B483DE-A176-3AD6-A159-BA918446C04A}</Project>
+      <Name>rtspd</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\server\sockfilt.vcxproj">
+      <Project>{62537F05-E394-397B-A41A-98C01D1B9813}</Project>
+      <Name>sockfilt</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\server\socksd.vcxproj">
+      <Project>{C63F96FF-FBDD-3156-B781-2DA7DEAFD162}</Project>
+      <Name>socksd</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\server\sws.vcxproj">
+      <Project>{5C91D43A-63FD-3754-BEE7-C7EF719BBD0E}</Project>
+      <Name>sws</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\curl_VS2022\build\tests\server\tftpd.vcxproj">
+      <Project>{236E1A4D-14A5-301F-B9EE-91D9AD406ACE}</Project>
+      <Name>tftpd</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

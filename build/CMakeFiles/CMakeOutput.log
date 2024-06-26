@@ -1,0 +1,114 @@
+Performing Test HAVE_WIN32_WINNT passed with the following output:
+Change Dir: 'E:/curl_VS2022/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "d:/Microsoft Visual Studio 17.0/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_673d3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+鐢熸垚鍚姩鏃堕棿涓?2024/6/26 20:42:28銆?
+
+鑺傜偣 1 涓婄殑椤圭洰鈥淓:\curl_VS2022\build\CMakeFiles\CMakeTmp\cmTC_673d3.vcxproj鈥?榛樿鐩爣)銆?
+PrepareForBuild:
+  姝ｅ湪鍒涘缓鐩綍鈥渃mTC_673d3.dir\Debug\鈥濄€?
+  宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+  姝ｅ湪鍒涘缓鐩綍鈥淓:\curl_VS2022\build\CMakeFiles\CMakeTmp\Debug\鈥濄€?
+  姝ｅ湪鍒涘缓鐩綍鈥渃mTC_673d3.dir\Debug\cmTC_673d3.tlog\鈥濄€?
+InitializeBuildStatus:
+  姝ｅ湪鍒涘缓鈥渃mTC_673d3.dir\Debug\cmTC_673d3.tlog\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+  姝ｅ湪瀵光€渃mTC_673d3.dir\Debug\cmTC_673d3.tlog\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+ClCompile:
+  d:\Microsoft Visual Studio 17.0\VC\Tools\MSVC\14.40.33807\bin\HostX64\x64\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_WIN32_WINNT /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_673d3.dir\Debug\\" /Fd"cmTC_673d3.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue E:\curl_VS2022\CMake\CurlTests.c
+  鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33811 鐗?
+  鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_WIN32_WINNT /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_673d3.dir\Debug\\" /Fd"cmTC_673d3.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue E:\curl_VS2022\CMake\CurlTests.c
+  CurlTests.c
+  _WIN32_WINNT=0x0A00
+Link:
+  d:\Microsoft Visual Studio 17.0\VC\Tools\MSVC\14.40.33807\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\curl_VS2022\build\CMakeFiles\CMakeTmp\Debug\cmTC_673d3.exe" /INCREMENTAL /ILK:"cmTC_673d3.dir\Debug\cmTC_673d3.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/curl_VS2022/build/CMakeFiles/CMakeTmp/Debug/cmTC_673d3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/curl_VS2022/build/CMakeFiles/CMakeTmp/Debug/cmTC_673d3.lib" /MACHINE:X64  /machine:x64 cmTC_673d3.dir\Debug\CurlTests.obj
+  cmTC_673d3.vcxproj -> E:\curl_VS2022\build\CMakeFiles\CMakeTmp\Debug\cmTC_673d3.exe
+FinalizeBuildStatus:
+  姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_673d3.dir\Debug\cmTC_673d3.tlog\unsuccessfulbuild鈥濄€?
+  姝ｅ湪瀵光€渃mTC_673d3.dir\Debug\cmTC_673d3.tlog\cmTC_673d3.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+宸插畬鎴愮敓鎴愰」鐩€淓:\curl_VS2022\build\CMakeFiles\CMakeTmp\cmTC_673d3.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+
+宸叉垚鍔熺敓鎴愩€?
+    0 涓鍛?
+    0 涓敊璇?
+
+宸茬敤鏃堕棿 00:00:00.60
+
+
+Performing Test HAVE_WIN32_WINNT passed with the following output:
+Change Dir: 'E:/curl_VS2022/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "d:/Microsoft Visual Studio 17.0/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c27c3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+鐢熸垚鍚姩鏃堕棿涓?2024/6/26 20:43:40銆?
+
+鑺傜偣 1 涓婄殑椤圭洰鈥淓:\curl_VS2022\build\CMakeFiles\CMakeTmp\cmTC_c27c3.vcxproj鈥?榛樿鐩爣)銆?
+PrepareForBuild:
+  姝ｅ湪鍒涘缓鐩綍鈥渃mTC_c27c3.dir\Debug\鈥濄€?
+  宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+  姝ｅ湪鍒涘缓鐩綍鈥淓:\curl_VS2022\build\CMakeFiles\CMakeTmp\Debug\鈥濄€?
+  姝ｅ湪鍒涘缓鐩綍鈥渃mTC_c27c3.dir\Debug\cmTC_c27c3.tlog\鈥濄€?
+InitializeBuildStatus:
+  姝ｅ湪鍒涘缓鈥渃mTC_c27c3.dir\Debug\cmTC_c27c3.tlog\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+  姝ｅ湪瀵光€渃mTC_c27c3.dir\Debug\cmTC_c27c3.tlog\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+ClCompile:
+  d:\Microsoft Visual Studio 17.0\VC\Tools\MSVC\14.40.33807\bin\HostX64\x64\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_WIN32_WINNT /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c27c3.dir\Debug\\" /Fd"cmTC_c27c3.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue E:\curl_VS2022\CMake\CurlTests.c
+  鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33811 鐗?
+  鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_WIN32_WINNT /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c27c3.dir\Debug\\" /Fd"cmTC_c27c3.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue E:\curl_VS2022\CMake\CurlTests.c
+  CurlTests.c
+  _WIN32_WINNT=0x0A00
+Link:
+  d:\Microsoft Visual Studio 17.0\VC\Tools\MSVC\14.40.33807\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\curl_VS2022\build\CMakeFiles\CMakeTmp\Debug\cmTC_c27c3.exe" /INCREMENTAL /ILK:"cmTC_c27c3.dir\Debug\cmTC_c27c3.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/curl_VS2022/build/CMakeFiles/CMakeTmp/Debug/cmTC_c27c3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/curl_VS2022/build/CMakeFiles/CMakeTmp/Debug/cmTC_c27c3.lib" /MACHINE:X64  /machine:x64 cmTC_c27c3.dir\Debug\CurlTests.obj
+  cmTC_c27c3.vcxproj -> E:\curl_VS2022\build\CMakeFiles\CMakeTmp\Debug\cmTC_c27c3.exe
+FinalizeBuildStatus:
+  姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_c27c3.dir\Debug\cmTC_c27c3.tlog\unsuccessfulbuild鈥濄€?
+  姝ｅ湪瀵光€渃mTC_c27c3.dir\Debug\cmTC_c27c3.tlog\cmTC_c27c3.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+宸插畬鎴愮敓鎴愰」鐩€淓:\curl_VS2022\build\CMakeFiles\CMakeTmp\cmTC_c27c3.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+
+宸叉垚鍔熺敓鎴愩€?
+    0 涓鍛?
+    0 涓敊璇?
+
+宸茬敤鏃堕棿 00:00:00.60
+
+
+Performing Test HAVE_WIN32_WINNT passed with the following output:
+Change Dir: 'E:/curl_VS2022/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "d:/Microsoft Visual Studio 17.0/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_48bdf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+鐢熸垚鍚姩鏃堕棿涓?2024/6/26 20:44:15銆?
+
+鑺傜偣 1 涓婄殑椤圭洰鈥淓:\curl_VS2022\build\CMakeFiles\CMakeTmp\cmTC_48bdf.vcxproj鈥?榛樿鐩爣)銆?
+PrepareForBuild:
+  姝ｅ湪鍒涘缓鐩綍鈥渃mTC_48bdf.dir\Debug\鈥濄€?
+  宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+  姝ｅ湪鍒涘缓鐩綍鈥淓:\curl_VS2022\build\CMakeFiles\CMakeTmp\Debug\鈥濄€?
+  姝ｅ湪鍒涘缓鐩綍鈥渃mTC_48bdf.dir\Debug\cmTC_48bdf.tlog\鈥濄€?
+InitializeBuildStatus:
+  姝ｅ湪鍒涘缓鈥渃mTC_48bdf.dir\Debug\cmTC_48bdf.tlog\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+  姝ｅ湪瀵光€渃mTC_48bdf.dir\Debug\cmTC_48bdf.tlog\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+ClCompile:
+  d:\Microsoft Visual Studio 17.0\VC\Tools\MSVC\14.40.33807\bin\HostX64\x64\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_WIN32_WINNT /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_48bdf.dir\Debug\\" /Fd"cmTC_48bdf.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue E:\curl_VS2022\CMake\CurlTests.c
+  鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33811 鐗?
+  鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_WIN32_WINNT /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_48bdf.dir\Debug\\" /Fd"cmTC_48bdf.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue E:\curl_VS2022\CMake\CurlTests.c
+  CurlTests.c
+  _WIN32_WINNT=0x0A00
+Link:
+  d:\Microsoft Visual Studio 17.0\VC\Tools\MSVC\14.40.33807\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\curl_VS2022\build\CMakeFiles\CMakeTmp\Debug\cmTC_48bdf.exe" /INCREMENTAL /ILK:"cmTC_48bdf.dir\Debug\cmTC_48bdf.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/curl_VS2022/build/CMakeFiles/CMakeTmp/Debug/cmTC_48bdf.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/curl_VS2022/build/CMakeFiles/CMakeTmp/Debug/cmTC_48bdf.lib" /MACHINE:X64  /machine:x64 cmTC_48bdf.dir\Debug\CurlTests.obj
+  cmTC_48bdf.vcxproj -> E:\curl_VS2022\build\CMakeFiles\CMakeTmp\Debug\cmTC_48bdf.exe
+FinalizeBuildStatus:
+  姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_48bdf.dir\Debug\cmTC_48bdf.tlog\unsuccessfulbuild鈥濄€?
+  姝ｅ湪瀵光€渃mTC_48bdf.dir\Debug\cmTC_48bdf.tlog\cmTC_48bdf.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+宸插畬鎴愮敓鎴愰」鐩€淓:\curl_VS2022\build\CMakeFiles\CMakeTmp\cmTC_48bdf.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+
+宸叉垚鍔熺敓鎴愩€?
+    0 涓鍛?
+    0 涓敊璇?
+
+宸茬敤鏃堕棿 00:00:00.60
+
+

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\curl_VS2022\build\CMakeFiles\5fb6d211673df0b42185dbc5b8c77b4c\curl.1.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\curl_VS2022\build\CMakeFiles\7c54466238f823dfb4592abed77442fb\generate-curl.1.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\curl_VS2022\docs\cmdline-opts\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\curl_VS2022\build\docs\cmdline-opts\CMakeFiles\generate-curl.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{254ED3C1-019A-3051-865A-0E78FE4447FC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
